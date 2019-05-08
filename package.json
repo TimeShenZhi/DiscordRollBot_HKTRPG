@@ -1,7 +1,7 @@
 {
-  "name": "Zetetic",
+  "name": "TimeShenZhi",
   "version": "1.0.0",
-  "description": "Zetetic Discord Bot",
+  "description": "TimeShenZhi Discord Bot",
   "engines": {
     "node": "6.9.1",
     "npm": "*"
@@ -18,9 +18,9 @@
   },
   "keywords": [
     "LeoLi",
-    "Zetetic",
+    "TimeShenZhi",
     "Discord",
-    "HKTRPG"
+    "Dicerollmaid"
   ],
   "license": "MIT"
 }

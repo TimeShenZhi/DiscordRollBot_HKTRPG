@@ -305,14 +305,39 @@ function coc6(chack, text) {
 
 function coc7(chack, text) {
 	let temp = rollbase.Dice(100);
-	if (temp > chack) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 失敗';
-	if (temp <= chack) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 通常成功';
-	if (temp <= chack / 2) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 困難成功';
-	if (temp <= chack / 5) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 極限成功';
-	if (temp == 1) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 恭喜！大成功！';
-	if (temp == 100) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 啊！大失敗！';
-	if (temp >= 96 && chack <= 49) rply.text = '1D100 ≦ ' + chack + "：\n" + temp + ' → 啊！大失敗！';
-	if (text != null) rply.text += '：' + text;
+	if (temp <= chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 通常成功';
+	if (temp <= chack / 2) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 困難成功';
+	if (temp <= chack / 5) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 極限成功';
+	if (temp <= 5 && chack >= 20) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → \\\\大☆成☆功/';
+	if (temp == chack && chack >= 20 && chack != 100 || temp == 99 && chack > 99) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → ✺\\\\精☆準☆成☆功/✺';
+	if (temp > chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 失敗';
+	if (temp == 87 && temp > chack) rply.text = '1D100 ≦ ' + chack + " = **__" + temp + '__** → ……呵。';
+	if (temp >= 96 && temp > chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → Σ(°Д°;)嗚喔，大失敗';
+	if (temp == 100) rply.text = '1D100 ≦ ' + chack + " = " + ":100:" + ' → ……我們懷念您。';
+	if (text != null) rply.text = text + "\n" + rply.text;
+	
+//	rply.text = rply.text;
+	
+	return rply;
+}
+
+function coc7cheat(chack, text) {
+	
+	
+	let temp = rollbase.Dice(chack);
+	
+	if (chack > 99) temp = rollbase.Dice(99);
+
+	if (temp <= chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 通常成功';
+	if (temp <= chack / 2) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 困難成功';
+	if (temp <= chack / 5) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 極限成功';
+	if (temp <= 5 && chack >= 20) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → \\\\大☆成☆功/';
+	if (temp == chack && chack >= 20 && chack != 100 || temp == 99 && chack > 99) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → ✺\\\\精☆準☆成☆功/✺';
+	if (temp > chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → 失敗';
+	if (temp == 87 && temp > chack) rply.text = '1D100 ≦ ' + chack + " = **__" + temp + '__** → ……呵。';
+	if (temp >= 96 && temp > chack) rply.text = '1D100 ≦ ' + chack + " = " + temp + ' → Σ(°Д°;)嗚喔，大失敗';
+	if (temp == 100) rply.text = '1D100 ≦ ' + chack + " = " + ":100:" + ' → ……我們懷念您。';
+	if (text != null) rply.text = "<@!" + userID + ">" + text + "\n" + rply.text;
 	return rply;
 }
 

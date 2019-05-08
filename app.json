@@ -1,8 +1,8 @@
 {
-	"name": "TrpgDiscordBot",
+	"name": "dicerollmaid",
 	"description": "簡單的、模組化的TrpgDiscordBot",
-	"repository": "https://github.com/zeteticl/RoboYabaso.git",
-	"keywords": ["RoboYabaso", "Line Bot", "TRPG"],
+	"repository": "https://github.com/TimeShenZhi/Dicerollmaid.git",
+	"keywords": ["Dicerollmaid", "Discord Bot", "TRPG"],
 	"env": {
 		"DISCORD_CHANNEL_KEYWORD": {
 			"description": "Bot的啓動語 如 !trpg 可留空",

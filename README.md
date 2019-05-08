@@ -1,16 +1,3 @@
-把Line版  Discord版 和Telegram版 合成一個項目了</br>
-所以這項目不再更新</br>
-雖然是三合一, 但每個BOT可以單獨啓動</br>
-</br>
-https://github.com/hktrpg/TG.line.Discord.Roll.Bot
-
-</br></br></br></br></br></br></br></br></br></br>
-
-
-
-
-
-
 # RoboYabasoDiscord@HKTRPG  V0.3.4
 # 開放原始碼的Discord骰子機器人
 關於RoboYabaso
@@ -85,7 +72,7 @@ Step3：將DiscordBot部署到Heroku
 --
 
 * 按一下下面這個按鈕</br>
-按它→[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/zeteticl/DiscordRollBot_HKTRPG)←按它</br></br></br>
+按它→[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/TimeShenZhi/Dicerollmaid)←按它</br></br></br>
 ---
 
 * 你會看到這個</br>
